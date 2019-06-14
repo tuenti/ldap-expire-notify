@@ -1,6 +1,11 @@
 LDAP Expire Notify
 ==================
 
+.. image:: https://circleci.com/gh/tuenti/ldap-expire-notify.svg?style=svg
+    :target: https://circleci.com/gh/tuenti/ldap-expire-notify
+.. image:: https://codecov.io/gh/tuenti/ldap-expire-notify/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/tuenti/ldap-expire-notify
+
 ``ldap-expire-notify`` is a tool to notify your LDAP users when their password
 is about to expire. It supports several kind of notification **channels**.
 
