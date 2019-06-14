@@ -1,0 +1,13 @@
+# Run `make up-reqs` to update pinned dependencies in requirement text files
+
+bandit
+coverage
+nose
+flake8==3.5.0
+mock
+pyflakes
+pytest
+pytest-mock
+mockldap
+requests-mock
+pyyaml>=4.2b1

@@ -1,0 +1,15 @@
+---
+channels:
+  webhook-test:
+    kind: webhook
+    threshold: 2592000000
+    headers:
+      Content-Type: application/json
+    url: 'http://httpbin.org/anything'
+    method: post
+    body: |-
+      {
+        "comment": "This is a test webhook that will POST a JSON body and some headers",
+        "msg": "Hi {{ ldap.cn | first }}, your LDAP password will expire in the next {{ threshold_day }} days",
+        "recipient": "@{{ ldap.slack | first }}"
+      }

@@ -1,0 +1,12 @@
+{
+  "channels": {
+    "email-test": {
+      "kind": "email",
+      "threshold": 259200000,
+      "recipient": "{{ ldap.mail | first }}",
+      "subject": "Your LDAP password will expire soon",
+      "body": "Hi {{ ldap.cn | first }}, your LDAP password will expire in the next {{ threshold_day | int }} days",
+      "from": "root@localhost"
+    }
+  }
+}

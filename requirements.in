@@ -1,0 +1,10 @@
+# Run `make up-reqs` to update pinned dependencies in requirement text files
+
+python-ldap
+PyYAML
+requests
+Click
+click-log
+dateparser
+Jinja2
+beautifulsoup4

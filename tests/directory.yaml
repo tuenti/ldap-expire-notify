@@ -1,0 +1,31 @@
+---
+  o=test:
+    objectClass: [top, organization]
+    o: test
+  ou=people,o=test:
+    objectClass: [top, organizationalUnit]
+    ou: people
+  uid=binduser,ou=people,o=test:
+    uid: [binduser]
+    objectClass: [person, organizationalPerson, inetOrgPerson, posixAccount]
+    userPassword: [bindpwd]
+    uidNumber: [1000]
+    gidNumber: [1000]
+    givenName: [Bind]
+    sn: [User]
+  uid=jdoe,ou=people,o=test:
+    uid: [jdoe]
+    objectClass: [person, organizationalPerson, inetOrgPerson, posixAccount]
+    userPassword: [password]
+    uidNumber: [1002]
+    gidNumber: [1002]
+    givenName: [John]
+    sn: [Doe]
+  uid=vcabezas,ou=people,o=test:
+    uid: [vcabezas]
+    objectClass: [person, organizationalPerson, inetOrgPerson, posixAccount]
+    userPassword: [password]
+    uidNumber: [1004]
+    gidNumber: [1004]
+    givenName: [Victor]
+    sn: [Cabezas]
