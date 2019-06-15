@@ -18,10 +18,10 @@ logger = logging.getLogger('ldap-expire-notify')
 
 
 def parse(path):
+    data = {'channels': {}}
     if os.path.isfile(path):
         data = parse_file(path)
     elif os.path.isdir(path):
-        data = {'channels': {}}
         for root, _, files in os.walk(path):
             for f in files:
                 abs_path = os.path.join(root, f)

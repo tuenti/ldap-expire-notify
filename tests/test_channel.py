@@ -24,6 +24,9 @@ def test_parse_directory_ko():
     with pytest.raises(ValueError):
         r = channel.parse('/tmp/')
 
+    with pytest.raises(ValueError):
+        r = channel.parse('/non-existent-chan/')
+
 
 def test_parse_directory():
     r = channel.parse('channels/')
