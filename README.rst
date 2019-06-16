@@ -25,7 +25,7 @@ Install ldap-expire-notify by running:
 
 ::
 
-  pip install git+https://github.com/tuenti/ldap-expire-notify@0.1.0#egg=ldap_expire_notify
+  pip install git+https://github.com/tuenti/ldap-expire-notify@0.1.1#egg=ldap_expire_notify
 
 How to use
 ----------
