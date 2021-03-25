@@ -5,23 +5,50 @@
 #    pip-compile --no-index --output-file=requirements.txt requirements.in
 #
 beautifulsoup4==4.7.1
-certifi==2019.3.9         # via requests
-chardet==3.0.4            # via requests
+    # via -r requirements.in
+certifi==2019.3.9
+    # via requests
+chardet==3.0.4
+    # via requests
 click-log==0.3.2
+    # via -r requirements.in
 click==7.0
+    # via
+    #   -r requirements.in
+    #   click-log
 dateparser==0.7.1
-idna==2.8                 # via requests
+    # via -r requirements.in
+idna==2.8
+    # via requests
 jinja2==2.10.1
-markupsafe==1.1.1         # via jinja2
-pyasn1-modules==0.2.5     # via python-ldap
-pyasn1==0.4.5             # via pyasn1-modules, python-ldap
-python-dateutil==2.8.0    # via dateparser
+    # via -r requirements.in
+markupsafe==1.1.1
+    # via jinja2
+pyasn1-modules==0.2.5
+    # via python-ldap
+pyasn1==0.4.5
+    # via
+    #   pyasn1-modules
+    #   python-ldap
+python-dateutil==2.8.0
+    # via dateparser
 python-ldap==3.2.0
-pytz==2019.1              # via dateparser, tzlocal
-pyyaml==5.1.1
-regex==2019.6.8           # via dateparser
+    # via -r requirements.in
+pytz==2019.1
+    # via
+    #   dateparser
+    #   tzlocal
+pyyaml==5.4
+    # via -r requirements.in
+regex==2019.6.8
+    # via dateparser
 requests==2.22.0
-six==1.12.0               # via python-dateutil
-soupsieve==1.9.1          # via beautifulsoup4
-tzlocal==1.5.1            # via dateparser
-urllib3==1.25.3           # via requests
+    # via -r requirements.in
+six==1.12.0
+    # via python-dateutil
+soupsieve==1.9.1
+    # via beautifulsoup4
+tzlocal==1.5.1
+    # via dateparser
+urllib3==1.25.3
+    # via requests
